@@ -12,12 +12,13 @@
 }
 
 .header h2{
+	font-family: 'Karla', sans serif;
 	font-style: italic;
 	font-size: 0.75em;
 	color: grey;
 	position: relative;
-	top: -2.3em;
-	left: 3.4em;
+	top: -2.7em;
+	left: 2.7em;
 }
 
 .input{
@@ -32,6 +33,72 @@
 	margin: auto;
 }
 
-.shoppinglist .shoppinglist-item{
+.shoppinglist{
+	font-family: 'Handlee', cursive;
+}
+
+#nolist{
+	text-align: center;
+}
+
+.shoppinglist ul{
+	padding: 0 20px;
+}
+
+.shoppinglist-item-container{
 	display: block;
+	margin: 0 10%;
+	padding: 0 10px;
+}
+
+.shoppinglist-item{
+	position: relative;
+	vertical-align: middle;
+}
+.shoppinglist-item li{
+	display: inline-block;
+}
+
+.shoppinglist-item .ghost{
+	display: inline-block;
+	height: 100%!important;
+	vertical-align: middle;
+	width: 2px;
+}
+
+.shoppinglist-item-left{
+	position: absolute;
+	left: 0;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.shoppinglist-item-right {
+	position: absolute;
+	right: 0;
+	vertical-align: middle;
+	height: 100%;
+}
+
+.shoppinglist-item-left .fa, .shoppinglist-item-right .fa {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.shoppinglist-item-content {
+	padding: 20px;
+}
+
+.shoppinglist-item-name {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.incomplete .shoppinglist-item-name{
+	text-decoration: none;
+}
+
+.complete .shoppinglist-item-name{
+	text-decoration: line-through;
 }
