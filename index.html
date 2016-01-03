@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Bogie-town shopping list</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore|Permanent+Marker' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore|Karla:400italic|Handlee' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
@@ -21,17 +21,55 @@
 	</section>
 
 	<section class="shoppinglist">
-		<div class = "no-list">There's nothing here!</div>
+		<div id= "nolist">There's nothing here!</div>
 		<ul>
-			<li class="shoppinglist-item">
-				<div>
-					
-				</div>
-				<div>
-					Click to search:
-					<i class="fa fa-amazon"></i>
-					<i class="fa fa-google"></i>
-				</div>	
+
+			<li class="shoppinglist-item-container incomplete">
+				<ul class="shoppinglist-item">
+					<li class="shoppinglist-item-left">
+						<i class="fa fa-circle-o fa-2x"></i>
+						<!-- <div class="complete">
+							<i class="fa fa-check-circle-o fa-2x"></i>	
+						</div> -->
+					</li>
+					<li class="shoppinglist-item-content">
+						<div class="shoppinglist-item-name">
+							Item text 1
+						</div>
+						<div class="shoppinglist-item-search">
+							Click to search:
+							<a href="http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=Item+Text+1"><i class="fa fa-amazon"></i></a>
+							<a href="http://www.google.com/?gws_rd=ssl#q=item+text+1"><i class="fa fa-google"></i></a>
+						</div>
+					</li>
+					<li class="shoppinglist-item-right">
+						<i class="fa fa-trash-o fa-2x"></i>
+					</li>
+				</ul>	
+			</li>
+
+			<li class="shoppinglist-item-container complete">
+				<ul class="shoppinglist-item">
+					<li class="shoppinglist-item-left">
+						<i class="fa fa-circle-o fa-2x"></i>
+						<!-- <div class="complete">
+							<i class="fa fa-check-circle-o fa-2x"></i>	
+						</div> -->
+					</li>
+					<li class="shoppinglist-item-content">
+						<div class="shoppinglist-item-name">
+							Item text 2
+						</div>
+						<div class="shoppinglist-item-search">
+							Click to search:
+							<a href="http://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=Item+Text+2"><i class="fa fa-amazon"></i></a>
+							<a href="http://www.google.com/?gws_rd=ssl#q=item+text+2"><i class="fa fa-google"></i></a>
+						</div>
+					</li>
+					<li class="shoppinglist-item-right">
+						<i class="fa fa-trash-o fa-2x"></i>
+					</li>
+				</ul>	
 			</li>
 		</ul>
 	</section>
