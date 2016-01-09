@@ -39,6 +39,9 @@
 
 #nolist{
 	text-align: center;
+	margin-top: 20px;
+	font-size: 2em;
+	color: red;
 }
 
 .shoppinglist ul{
@@ -101,4 +104,12 @@
 
 .complete .shoppinglist-item-name{
 	text-decoration: line-through;
+}
+
+.shoppinglist-item-right .fa:hover{
+	cursor: pointer;
+}
+
+.shoppinglist-item-left .fa:hover{
+	cursor: pointer;
 }
